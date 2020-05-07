@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="UTF-8">
+    <script type="text/javascript" src="/eel.js"></script>
+    <script type="text/javascript" src="main.js"></script>
+    <link rel="stylesheet" type="text/css" href="style/main.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+ 
+    <title>WarzoneTracker by Mecke</title>
+
+  </head>
+
+  <body class="bg-dark" onload="addFields()">
+
+    <div class="nName">
+      <input type="button" id="location" class="btn btn-warning btn-lg btn-block" value="Random Drop" onclick="get_random()"></br></br>
+      <input type="text" class="form-control" id="newName" placeholder="Name" >
+      <input type="button" class="btn btn-primary btn-lg btn-block" id="add_name" onclick="addName(), addFields()" value="Add Name">
+    </div>
+    <hr>
+    <div id="reset">
+      <input type="button" class="btn btn-danger btn-lg btn-block" onclick="reset()" value="Reset All">
+    </div>
+
+    <hr>
+
+    <div class="inputs">
+
+      <select name="Gamemodes" id="Gamemodes" class="custom-select" onchange="addFields()">
+
+        <option>Solo BR </option>
+        <option>Duo BR </option>
+        <option>Trio BR </option>
+        <option>Quad BR </option>
+        
+        <option>Solo Plunder </option>
+        <option>Duo Plunder </option>
+        <option>Trio Plunder </option>
+        <option>Quad Plunder </option>
+
+      </select><hr>
+
+      <div id="fields"></div>
+      
+      <input type="button" id="add_Match" class="btn btn-primary btn-lg btn-block" value="add Match" onclick="addMatch(), addFields()">
+
+    </div>
+
+    <hr>
+    
+    <div id="playerStats">
+
+    </div>
+
+  </body>
+
+</html>

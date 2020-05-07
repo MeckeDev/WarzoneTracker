@@ -1,0 +1,26 @@
+body {
+    padding-top: 20px;    
+    overflow-x: hidden;
+}
+
+.nName {
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.inputs {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.f1 {
+    font-size: 72px;
+}
+
+#reset {
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+}
